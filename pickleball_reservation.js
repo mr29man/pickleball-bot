@@ -81,10 +81,10 @@ import { chromium } from "playwright";
     // search
     await page.click('button[id="frwebsearch_buttonsearch"]');
     const courtNumber = 6;
-    const courtSelector = `table:has(tbody td.label-cell[data-title="Facility Description"]:has-text("Pickleball Court ${courtNumber}")) a:has-text("4:00 pm - 5:00 pm")`;
+    const courtSelector = `table:has(tbody td.label-cell[data-title="Facility Description"]:has-text("Pickleball Court ${courtNumber}")) a:has-text("9:00 am - 10:00 am")`;
     await page.waitForSelector(courtSelector);
 
-    // select Pickleball Court 6, 4:00 PM - 5:00 PM
+    // select Pickleball Court 6, 9:00 AM - 10:00 AM
     await page.click(courtSelector);
 
     const addToCartSelector = 'text="Add To Cart"';
