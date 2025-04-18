@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        environment: [shinichi, pickle] # Define environments
+        environment: [pickle] # Define environments
     environment: ${{ matrix.environment }} # Set the environment dynamically
 
     steps:
